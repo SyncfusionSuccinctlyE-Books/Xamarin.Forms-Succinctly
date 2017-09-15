@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NativeAccess"
+             x:Class="NativeAccess.CustomRenderersPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="20">
+            <Label Text="Enter some text:"/>
+
+            <local:AutoSelectEntry x:Name="MyEntry" Text="Enter text..." 
+         HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

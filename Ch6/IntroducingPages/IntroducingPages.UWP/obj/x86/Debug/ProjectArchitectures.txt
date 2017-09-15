@@ -1,0 +1,2 @@
+C:\Users\Alessandro\documents\visual studio 2017\Projects\IntroducingPages\IntroducingPages\IntroducingPages.UWP\IntroducingPages.UWP.csproj;x86
+C:\Users\Alessandro\documents\visual studio 2017\Projects\IntroducingPages\IntroducingPages\IntroducingPages\IntroducingPages.csproj;neutral
