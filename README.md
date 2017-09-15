@@ -1,3 +1,3 @@
 # Xamarin.Forms Succinctly
 
-Companion repo for the Xamarin.Forms Succinctly 2017 eBook from Syncfusion
+Companion repo for the Xamarin.Forms Succinctly e-book from Syncfusion.
