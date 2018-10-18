@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CommonViews.ValueSelectionSample">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout>
+                <Label Text="Enable data plan"/>
+                <Switch x:Name="Switch1" IsToggled="True" Toggled="Switch1_Toggled" 
+             Margin="5,0,0,0"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Select your age: "/>
+                <Slider x:Name="Slider1" Maximum="85" Minimum="13" Value="30"
+    ValueChanged="Slider1_ValueChanged"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Select your age: "/>
+                <Stepper x:Name="Stepper1" Increment="1" Maximum="85" Minimum="13" 
+            Value="30" ValueChanged="Stepper1_ValueChanged"/>
+                <Label x:Name="StepperValue"/>
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="NativeAccess.PlatformSpecificsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ios:ListView.SeparatorStyle="FullWidth" x:Name="ListView1">
+                <!-- Bind your data and add a data template here... -->
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
