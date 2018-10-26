@@ -6,4 +6,4 @@ This is the companion repo for [*Xamarin.Forms Succinctly*](https://www.syncfusi
 
 ## Looking for more _Succinctly_ titles?
 
-Check out the entire library of more than 130 _Succinctly_ e-books at [https://www.syncfusion.com/ebooks](https://www.syncfusion.com/ebooks).
+Check out the entire library of more than 150 _Succinctly_ e-books at [https://www.syncfusion.com/ebooks](https://www.syncfusion.com/ebooks).
