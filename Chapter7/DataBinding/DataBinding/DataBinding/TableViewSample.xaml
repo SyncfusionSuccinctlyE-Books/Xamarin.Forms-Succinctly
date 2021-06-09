@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataBinding.TableViewSample">
+    <ContentPage.Content>
+        <TableView Intent="Settings">
+            <TableRoot>
+                <TableSection Title="Network section">
+                    <SwitchCell Text="Allowed" On="True"/>
+                </TableSection>
+                <TableSection Title="Push notifications">
+                    <SwitchCell Text="Allowed" On="True"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+    </ContentPage.Content>
+</ContentPage>

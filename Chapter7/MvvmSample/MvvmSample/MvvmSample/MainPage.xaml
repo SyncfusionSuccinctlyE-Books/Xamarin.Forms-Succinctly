@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MvvmSample.MainPage" Padding="0,20,0,0">
+
+    <StackLayout>
+        <RefreshView RefreshColor="Teal" 
+                     IsRefreshing="{Binding IsRefreshing}"
+                     Command="{Binding RefreshCommand}">
+            <CollectionView x:Name="PeopleList" 
+                     ItemsSource="{Binding People}"
+                     SelectionMode="Single" 
+                     SelectedItem="{Binding SelectedPerson}"
+                     VerticalScrollBarVisibility="Never" 
+                     HorizontalScrollBarVisibility="Never">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Margin="10">
+                            <Label Text="Full name:"/>
+                            <Entry Text="{Binding FullName}"/>
+                            <Label Text="Date of birth:"/>
+                            <DatePicker Date="{Binding DateOfBirth, 
+                                                Mode=TwoWay}"/>
+                            <Label Text="Address:"/>
+                            <Entry Text="{Binding Address}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>            
+        </RefreshView>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Add" Command="{Binding AddPersonCommand}"/>
+            <Button Text="Delete" Command="{Binding DeletePersonCommand}" 
+                    CommandParameter="{Binding Source={x:Reference PeopleList}, 
+                    Path=SelectedItem}"/>
+            <Button Text="Detail" Command="{Binding ViewPersonDetail}"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

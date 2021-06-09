@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:pages="clr-namespace:ShellDemo.Views"
+       xmlns:local="clr-namespace:ShellDemo"
+       x:Class="ShellDemo.AppShell">
+    <!--<Shell.SearchHandler>
+        <local:PeopleSearchHandler Placeholder="Enter search term"
+                                   ShowsResults="true"
+                                   DisplayMemberName="FirstName" />
+    </Shell.SearchHandler>-->
+
+    <!--<TabBar>
+        <Tab Title="Home" Icon="home.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:HomePage}"/>
+        </Tab>
+        <Tab Title="About" Icon="about.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:AboutPage}"/>
+        </Tab>
+        <Tab Title="Contact" Icon="contact.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:ContactPage}"/>
+        </Tab>
+    </TabBar>-->
+    <!--<FlyoutItem Title="Home" Icon="home.png">
+        <ShellContent ContentTemplate="{DataTemplate pages:HomePage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="About" Icon="about.png">
+        <ShellContent ContentTemplate="{DataTemplate pages:AboutPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Contact" Icon="contact.png">
+        <ShellContent ContentTemplate="{DataTemplate pages:ContactPage}"/>
+    </FlyoutItem>-->
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Home" Icon="home.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:HomePage}"/>
+        </Tab>
+        <Tab Title="About" Icon="about.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:AboutPage}"/>
+        </Tab>
+        <Tab Title="Contact" Icon="contact.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:ContactPage}"/>
+        </Tab>
+    </FlyoutItem>
+
+</Shell>

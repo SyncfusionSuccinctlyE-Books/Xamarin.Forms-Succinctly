@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shapes.MainPage">
+
+    <StackLayout>
+        <Ellipse Fill="Violet"
+         Stroke="Green"
+         StrokeThickness="3"
+         WidthRequest="250"
+         HeightRequest="100"
+         HorizontalOptions="Center" 
+         Margin="0,50,0,0"/>
+
+        <Rectangle 
+           Stroke="Green"
+           StrokeThickness="4"
+           StrokeDashArray="1,1"
+           StrokeDashOffset="6"
+           WidthRequest="250"
+           HeightRequest="100"
+           Margin="0,50,0,0"
+           HorizontalOptions="Center">
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="LightBlue" Offset="0"/>
+                    <GradientStop Color="Blue" Offset="0.5"/>
+                    <GradientStop Color="Violet" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Line X1="0" Y1="30" X2="250" Y2="20"
+         StrokeLineCap="Round" Stroke="Violet"
+         StrokeThickness="12" Margin="0,50,0,0"
+         HorizontalOptions="Center"/>
+
+        <Polygon Points="50,20 80,60 20,60"
+         Fill="Violet"
+         Stroke="Green"
+         StrokeThickness="4"
+         StrokeDashArray="1,1"
+         StrokeDashOffset="6" 
+         HorizontalOptions="Center"/>
+    </StackLayout>
+
+</ContentPage>

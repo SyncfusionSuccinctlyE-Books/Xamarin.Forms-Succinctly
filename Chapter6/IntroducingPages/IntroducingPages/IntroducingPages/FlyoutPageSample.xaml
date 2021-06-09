@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntroducingPages.FlyoutPageSample"
+             xmlns:pages="clr-namespace:IntroducingPages">
+    
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Main page">
+            <Label Text="This is the Flyout" HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <ContentPage>
+            <Label Text="This is the Details" HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+        </ContentPage>
+    </FlyoutPage.Detail>
+
+</FlyoutPage>

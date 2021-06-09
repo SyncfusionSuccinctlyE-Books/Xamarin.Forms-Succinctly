@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataBinding.PickerSample"
+             Padding="0,20,0,0">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Label Text="Select your favorite fruit:"/>
+            <Picker x:Name="FruitPicker" ItemDisplayBinding="{Binding Name}"
+                    SelectedIndexChanged="FruitPicker_SelectedIndexChanged"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

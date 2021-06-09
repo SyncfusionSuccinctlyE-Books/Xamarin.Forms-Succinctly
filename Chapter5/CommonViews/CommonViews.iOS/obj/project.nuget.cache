@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Bl0qDBXyLQ8uXgJi9W+K646EXNYiNMS+vxMCP2AEIMcGshzIFLaAZtEa7d9LvILyQrHYuClvBs8waZHqM9pH0g==",
+  "success": true,
+  "projectFilePath": "C:\\Temp\\XamarinFormsSuccinctly_SourceCode\\XamarinFormsSuccinctly\\Chapter5\\CommonViews\\CommonViews.iOS\\CommonViews.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adelsole\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\adelsole\\.nuget\\packages\\xamarin.communitytoolkit\\1.0.2\\xamarin.communitytoolkit.1.0.2.nupkg.sha512",
+    "C:\\Users\\adelsole\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\adelsole\\.nuget\\packages\\xamarin.forms\\5.0.0.1931\\xamarin.forms.5.0.0.1931.nupkg.sha512"
+  ],
+  "logs": []
+}

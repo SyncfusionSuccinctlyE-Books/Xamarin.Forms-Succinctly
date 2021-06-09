@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataBinding.CarouselViewSample" Padding="0,20,0,20">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <CarouselView x:Name="PeopleList" ItemsSource="{Binding People}" 
+                              CurrentItemChanged="PeopleList_CurrentItemChanged" 
+                              PositionChanged="PeopleList_PositionChanged"
+IndicatorView="PersonIndicatorView"
+                              CurrentItem="{Binding SelectedPerson}">
+                <CarouselView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal"
+                         SnapPointsAlignment="Center"
+                         SnapPointsType="Mandatory"/>
+                </CarouselView.ItemsLayout>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Margin="10">
+                            <Label Text="Full name:"/>
+                            <Entry Text="{Binding FullName}"/>
+                            <Label Text="Date of birth:"/>
+                            <DatePicker Date="{Binding DateOfBirth, 
+                                                Mode=TwoWay}"/>
+                            <Label Text="Address:"/>
+                            <Entry Text="{Binding Address}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView x:Name="PersonIndicatorView"
+                   IndicatorColor="LightGray"
+                   SelectedIndicatorColor="DarkGray"
+                   HorizontalOptions="Center" />
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
